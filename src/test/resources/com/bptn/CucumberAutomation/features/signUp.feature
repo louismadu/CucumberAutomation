@@ -17,4 +17,4 @@ Feature: User Sign Up
       | First Name | Last Name | Email             | Password |
       | Jane       | Smith     | invalid_email.com | abc      |
      And the user clicks the sign-up button
-    Then the user should see an error messageen the user should see an error message
+    Then the user should see an error message 
