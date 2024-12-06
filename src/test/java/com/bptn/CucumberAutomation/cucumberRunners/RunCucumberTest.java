@@ -1,4 +1,4 @@
-package com.bptn.CucumberAutomation.cucmberRunners;
+package com.bptn.CucumberAutomation.cucumberRunners;
 
 import static io.cucumber.junit.platform.engine.Constants.GLUE_PROPERTY_NAME;
 
@@ -9,7 +9,8 @@ import org.junit.platform.suite.api.Suite;
 
 @Suite
 @IncludeEngines("cucumber")
-@SelectClasspathResource("com/bptn/CucumberAutomation")
+@SelectClasspathResource("com/bptn/CucumberAutomation/features/example.feature")
+@SelectClasspathResource("com/bptn/CucumberAutomation/features/calculator.feature")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "com.bptn.CucumberAutomation")
 public class RunCucumberTest {
 }
